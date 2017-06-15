@@ -1,0 +1,11 @@
+version: '2'
+services:
+    homepage-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/HomePage/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=HomePage
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
